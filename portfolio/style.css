@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(backimg.jpg);
+    color: white;
+}
+p{
+    font-family: Helvetica (sans-serif);
+    font-size: 20px;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url("backimg.jpg"); */
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+span{
+    color: rgb(82, 198, 236);
+}
+nav ul li{
+    list-style-type: none;
+     display: inline-block;/*/then no need ofdisplayflex */
+    justify-content: space-between;
+    margin: 10px 20px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+nav ul li a::after{
+    content: '';
+    width:0;
+    height: 3px;
+    background-color: rgb(78, 177, 238);
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    transition: 0.5s;
+    border-radius: 23px;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.headerText{
+    font-size: 20px;
+    margin-top:10% ;
+
+}
+.headerText p{
+    font-size: 49px;
+}
+.headerText h1{
+    margin-top: 2%;
+    font-size: 100px;
+}
+/* ----------------about section--------------- */
+#about{
+    width: 100%;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+.aboutcol1{
+    flex-basis: 35%;
+}
+.aboutcol1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.aboutcol2{
+    /* so that we will get remaining space of 5% in bw both the div */
+    flex-basis: 60%;
+    
+}
+.title{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: capitalize;
+    /* border: 2px solid red; */
+    margin-bottom: 30px;
+
+}
+.description{
+    margin-bottom: 50px;
+    line-height: 1.6em;
+}
+.tabtitles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tablinks{
+    margin-right:40px ;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+.tablinks::after{
+    content: '';
+    width: 0;
+    position: absolute;
+    height: 3px;
+    background-color: rgb(78, 177, 238);
+    bottom: -8px;
+    left: 0;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+.tablinks.active-link::after{
+    width: 50%;
+}
+.tabcontents ul li{
+    list-style-type: none;
+    margin: 10px 0;
+    font-size: 15px;
+}
+.tabcontents{
+    display: none;
+}
+.tabcontents.active-tab{
+    display: block;
+}
+    /* ---------services---------- */
+#services{
+    padding: 30px 0;
+
+}
+.serviceslist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.serviceslist div{
+    background: rgba(0, 0, 0, 0.689);
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+.serviceslist div i{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.serviceslist div a{
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+    color: rgb(235, 44, 44) ;
+    padding: 5px 0;
+}
+.serviceslist div h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.serviceslist div:hover{
+    background: rgb(77, 197, 241);
+    transform: translateY(-10px);
+}
+
+/* --------portfolio---------- */
+#portfolio{
+    padding: 50px 0;
+}
+.work img{
+    width: 420px;
+    height: 100%;
+    /* border: 2px solid red; */
+    border-radius: 12px; 
+    display: block;
+    transition: transform 0.5s;
+    overflow: hidden;
+}
+.work{
+    position: relative;
+    overflow: hidden;
+}
+.worklist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 60px;
+    margin-top: 50px;  
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgb(1, 183, 255));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align:center ;
+    font-size: 18px;
+    transition: height 0.5s; /*it means transition of height*/ 
+    overflow: hidden;
+}
+
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 23px;
+
+}
+.layer a{
+    margin-top:20px ;
+    color: rgb(9, 9, 9);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: rgb(255, 255, 255);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    padding: 14px 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+    width: fit-content;
+    margin: 50px auto;
+    border: 1px solid rgb(78, 177, 238);
+    transition: background 0.6s ;
+    background-color: rgb(78, 177, 238,);
+}
+.btn:hover{
+    background-color: transparent;
+}
+/* ------------contact------ */
+.contactLeft{
+    flex-basis: 55%;
+    text-align: center;
+}
+.contactRight{
+    flex-basis: 60%;
+}
+.contactLeft p{
+    margin-top: 30px;
+}
+.contactLeft p i{
+    margin-right: 20px;
+    font-size: 23px;
+    color: rgb(78, 177, 238);
+}
+.contactLeft a{
+    text-decoration: none;
+    color:aliceblue ;
+}
+.social{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social a{
+    text-decoration: none;
+    font-size: 23px;
+    margin-right: 12px;
+    display: block;
+    transition: transform 0.5s;
+    color: white;
+
+}
+.social a:hover{
+    color: rgb(78, 177, 238);
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background:rgb(1, 183, 255) ;
+}
+.contactRight form{
+    width: 100%;
+}
+form  input ,form textarea{
+    width: 100%;
+    border: 0;
+    background: rgb(89, 87, 87);
+    padding: 15px;
+    margin: 15px 10px;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 33%;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 20px 10px;
+    background-color: #262626;
+}
+.copyright i{
+    color: orange;
+}
+/*----------------- media query for the screen size of phone of 600px or below------------- */
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    .headerText{
+        margin-top: 100%;
+        font-size: 18px;
+    }
+    .headerText h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+    }
+    nav ul{
+        background:rgb(1, 183, 255);
+        position: fixed;
+        top: 0;
+        right: -200px; /*so that we can make it hidden*/
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor:pointer;
+        color: black;
+    }
+    nav ul li a::after{
+        background-color: black;
+    }
+    /* .aboutcol1, .aboutcol2{
+        flex-basis: 100%;
+    } */
+    .aboutcol1 img{
+        width: 100%;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+    .contactLeft, .contactRight{
+        flex-basis: 100%;
+    }
+}

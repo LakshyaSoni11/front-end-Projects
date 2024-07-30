@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/df09f97237.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+         <div class="container">
+            <nav>
+                <div class="logo"><span>Lak</span>shya.</div>
+                <ul id="sidemenu">
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#contact">contacts</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headerText">
+                <p>frontEnd web developer</p>
+                <h1>Hi, I'm <span>Lakshya</span> <br>and i am from India.</h1>
+            </div>
+         </div>
+    </div>
+    <!-- --------about section-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutcol1">
+                    <img src="bgimg1.png" alt="">
+                </div>
+                <div class="aboutcol2">
+                   <h1 class="title">About me</h1>
+                    <p class="description">Hi, I'm Lakshya Soni, a second-year B.Tech student in Computer Science and Engineering at Amrita Vishwa Vidyapeetham. I have a strong passion for front-end development and have honed my skills in HTML, CSS, and JavaScript. In addition to front-end technologies, I have proficiency in languages such as C, C++, and Python.
+                        I'm always eager to learn and take on new challenges, and I'm currently seeking an internship opportunity as a front-end developer. I look forward to applying my skills in a practical environment and contributing to impactful projects.</p>
+                    <div class="tabtitles">
+                        <p class="tablinks active-link" onclick="opentab('skills')">skills</p>              
+                        <p class="tablinks" onclick="opentab('projects')">projects</p>              
+                        <p class="tablinks" onclick="opentab('education')">education</p>              
+                    </div>
+                    <div class="tabcontents active-tab" id="skills">
+                        <ul>
+                            <li>C++<br>Learned Dsa in C++.</li>
+                            <li>Python<br>Lorem ipsum dolor sit </li>
+                            <li>JS<br>Lorem ipsum dolor sit.</li>
+                            <li>C<br>Lorem ipsum dolor sit </li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="projects">
+                        <ul>
+                            <li>2024-2025<br>Fully responsive portfolio website using html css and js</li>
+                            <li>2024-2025<br>Created calc using html css and js</li>
+                            <li>2024-2025<br>Created a basic ott landing page using html css and js</li>
+                            <li>2024-2025<br>Created a weather app using API and html css and js</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="education">
+                        <ul>
+                            <li>2020<br>Completed my Xth grade from St.Pauls school </li>
+                            <li>2022<br>Completed my XIIth grade from St.Pauls school</li>
+                            <li>2022-26<br>Pursuing B.tech degree from Amrita Vishwa Vidyapeetham Coimbatore</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------services -------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="title">My services</h1>
+            <div class="serviceslist">
+                <div id="webdesign">
+                    <i class="fa-regular fa-file-code"></i>
+                    <h3>web design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quam?</p>                   
+                    <a href="#">Learn More</a>
+                </div>
+                <div id="appdev">
+                    <i class="fa-solid fa-rocket"></i>
+                    <h3>app dev</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quam?</p>                    
+                    <a href="#">Learn More</a>
+                </div>
+                <div id="seo"> 
+                    <i class="fa-brands fa-codepen"></i>
+                    <h3>seo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quam?</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------portfolio---------------->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="title">My portfolio</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="img1.png" alt="">
+                    <div class="layer">
+                        <h3>project 1</h3>
+                        <p>Created a basic Weather ap using api and Html css and js.</p>
+                        <a href=""> <i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                   
+                    <img src="img2.png" alt="">
+                    <div class="layer">
+                    <h3>project 2</h3>
+                        <p>created a basic calc using html css and js.</p>
+                       <a href=""> <i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="img3.png" alt="">
+                    <div class="layer">
+                    <h3>project 3</h3>
+                        <p>created a basic landing page using html css and js.</p>
+                        <a href=""> <i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="btn">See More</div>
+        </div>
+
+     </div>
+     <!-- --------contact-------->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contactLeft">
+                    <h1 class="title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> <a href="mailto:sonilucky2004@gmail.com">sonilucky2004@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i> 9669331684</p>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/lakshya-soni-83b42a23b/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/_lakshya__17/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/LakshyaSoni11"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://x.com/_lakshya_soni"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="mycv.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contactRight">
+                <form action="">
+                    <input type="text" name="Name" placeholder="Your Name">
+                    <input type="email" name="email" placeholder="Your Email">
+                    <textarea type="Message" rows="5" name="" placeholder="Your message"></textarea>
+                    <div type="submit" class="btn btn2">Submit</div>
+                </form>
+            </div>  
+            </div>
+        </div>
+      </div>
+    <div class="copyright">This is my own portfolio <i class="fa-solid fa-fire"></i> hence no copyright &copy </div>
+
+</body>
+<script src="script.js">
+    
+    
+</script>
+</html>

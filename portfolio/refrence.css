@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+.sec{
+    width: 100%;
+    height: 100vh;
+    background-image: url("backimg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;/*used for easy alignment of text*/
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.portfolio{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    letter-spacing: 2px;
+    border-radius: 9px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-decoration-color: rgb(255, 63, 63);
+    box-shadow: 0 0 10px #f0163e,0 0 40px #f01621,0 0 90px #f0162c;
+}
+h2.portfolio{
+    top: 8px;
+    left: 9px;
+}
+span{
+    color: #d80b0b;
+}
+nav ul li{
+    display: inline-block;
+    font-weight: bold;
+    padding: 11px 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(208, 203, 203);
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: aqua;
+    border: 2px solid rgba(0,0,0);
+    border-radius: 7px;
+    background: rgba(0,0,0,0.6);
+    transform: scale(1.5);
+    transition: 0.1s;
+    cursor: pointer ;
+    box-shadow: 0 0 10px #1670f0,0 0 40px #1670f0,0 0 90px #1670f0;
+}
+.btn{
+    color: rgb(247, 62, 5);
+}
+.intro{
+    position: absolute;
+    left: 5%;
+    top: 26%;
+    text-transform: capitalize;
+    /* box-shadow: 0 0 10px #1670f0,0 0 40px #1670f0,0 0 90px #1670f0; */
+    color: grey
+}
+h1{
+    margin: -14px 0px 25px;
+    font-size: 75px;
+    padding: 0;
+}
+h2{
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+h3{
+    font-size: 20px;
+    margin-bottom: 19px;
+}
+.search form{
+    position: relative;
+    width: 100%;
+    top: 13px;
+}
+.search form :first-child{/*used to select specified selector only it is for search bar wihich is first child*/
+    display: inline-block;
+    border: 2px solid rgb(0, 0, 0);
+    outline: none;
+    border-radius: 20px;
+    padding: 9px;
+    padding-left: 18px;
+    padding-right: 8px;
+}
+.search form :last-child{
+    position: absolute;
+    display: inline-block;
+    border-radius: 17px;
+    padding: 7px;
+
+}
+.main img{
+    width: 54%;
+    height: 154vh;
+    padding: 34px 0px;
+}
+.about{
+    width: 100%;
+    background-image: url("backimg.jpg");
+}
+.aboutme {
+    position: relative;
+    width: 550px;
+    right: -39px;
+    font-size: 20px;
+}
+.main{
+    color: rgb(150, 192, 228);
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;/*helps to align items in row or column*/
+    align-items: center;
+    justify-content: space-between;
+}
+.aboutme p{
+    position: relative;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+letter-spacing: 2px;
+font-weight: bold;
+top: -132px;
+}
+.aboutme h3{
+    position: relative;
+    color: azure;
+    font-size: 70px;
+    box-shadow: 0 0 10px red,0 0 30px red,0 0 50px red;
+    padding-left: 66px;
+    border-radius: 15px;
+    bottom: 283px;
+}
+.aboutme h5{
+    position: relative;
+    bottom: 200px;
+    color: aqua;
+    font-size: 34px;
+    text-transform: capitalize;
+}
+.btn{
+    position: relative;
+    right: -30px;
+    display: inline-block;
+    justify-content: space-between;
+    margin: 15px 28px;
+    color: #000000;
+    background: #f0162c;
+    border-radius: 7px;
+    padding: 10px 24px;
+    border: 1.5px solid black;
+    border: none;
+    box-shadow: 0 0 5px #f0162c,0 0 10px #f0162c , 0 0 30px #f0162c;
+}
+.btn:hover{
+    background-color: #8a0915;
+}
+.service{
+    background-image: url(backimg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+.title{
+    display: inline-block;
+    border: 2px solid red;
+    width: 35%;
+    height: 70%;
+    text-align: center;
+    padding: 15px;
+    padding-top: 37px;
+    font-size: 25px;
+    left: -100px;
+    top: 85px;
+   color: rgb(62, 244, 244);
+   position: relative;
+   border-radius: 15px;
+   box-shadow: 0 0 10px  red, 0 0 20px  red , 0 0 30px red;
+   
+}
+.education{
+    display: inline-block;
+    border: 2px solid red;
+    position: relative;
+    width: 35%;
+    height: 70%;
+    text-align: center;
+    padding: 15px;
+    padding-top: 37px;
+    font-size: 25px;
+    right: -68px;
+    top: 49px;
+    color: rgb(62, 244, 244);
+    padding: 30px;
+    border-radius: 15px; 
+    box-shadow: 0 0 10px   red , 0 0 20px  red , 0 0 30px red;
+}
+.social{
+    width: 100%;
+    height: 100vh;
+    background-image: url(backimg.jpg);
+}
+.head h2{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    top: 14px;
+    font-size: 75px;
+    text-transform: uppercase;
+    border: 2px solid red;
+    border-radius: 17px;
+    margin-bottom: 23px;
+    box-shadow: 0 0 10px   red , 0 0 20px  red , 0 0 30px red;
+}
+.title h2{
+    color: whitesmoke;
+    text-transform: uppercase;
+    box-shadow: 0 0 4px  whitesmoke  , 0 0 8px whitesmoke  , 0 0 14px whitesmoke;
+    margin-bottom: 19px;
+    border-radius: 5px;
+}
+.education h2{
+    color: whitesmoke;     
+    text-transform: uppercase;
+    box-shadow: 0 0 4px  whitesmoke, 0 0 8px  whitesmoke, 0 0 14px  whitesmoke;
+    margin-bottom: 19px;
+    border-radius: 5px;
+}
+.hobbies{
+    display: inline-block;
+    border: 2px solid red;
+    position: relative;
+    width: 35%;
+    height: 70%;
+    text-align: center;
+    margin: 38px;
+    padding: 65px;
+    font-size: 25px;
+    text-align: center;
+    top: 70px;
+    color: rgb(62, 244, 244);
+    border-radius: 15px; 
+    box-shadow: 0 0 10px   red , 0 0 20px  red , 0 0 30px red;
+}
+.hobbies h2{
+    color: whitesmoke;     
+    text-transform: uppercase;
+    box-shadow: 0 0 4px  whitesmoke, 0 0 8px  whitesmoke, 0 0 14px  whitesmoke;
+    margin-bottom: 19px;
+    border-radius: 5px;
+}
+.connect nav{
+    
+    display: flex;/*used for easy alignment of text*/
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 2px;
+}
+.connect nav ul li a:hover{
+    text-decoration: underline;
+    cursor: pointer ;
+    border: none;
+    box-shadow: none;
+    background: none;
+    color: #eb9514;
+}
+.connect h2{
+    font-size: 40px;
+    color: #1670f0;
+    padding: 8px;
+}
